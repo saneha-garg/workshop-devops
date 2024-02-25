@@ -1,1 +1,1 @@
-sonar-scanner.bat -D"sonar.projectKey=jenkins" -D"sonar.sources=." -D"sonar.host.url=http://localhost:9009" -D"sonar.token=sqp_99bf169e3bf87f8cb59011a920c13a35d450e5e2"
+sonar-scanner.bat -D"sonar.projectKey=jenkins" -D"sonar.sources=." -D"sonar.host.url=http://localhost:9009" -D"sonar.token=sqp_5a9ac3871bf2a7aee67bb11afb86fe96bf4f67d1"
