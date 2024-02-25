@@ -1,1 +1,13 @@
-sonar-scanner.bat -D"sonar.projectKey=jenkins" -D"sonar.sources=." -D"sonar.host.url=http://localhost:9009" -D"sonar.token=sqp_5a9ac3871bf2a7aee67bb11afb86fe96bf4f67d1"
+pipeline {
+  agent {
+      label 'master'
+  }
+
+    stage('Sonar-Report') {
+      steps {
+        bat 'mvn clean verify sonar:sonar -Dsonar.projectKey=applicationweb -Dsonar.projectName=\'workshop-project\' -Dsonar.host.url=http://localhost:9009 -Dsonar.token=sqp_5a9ac3871bf2a7aee67bb11afb86fe96bf4f67d1'
+      }
+    }
+
+  }
+}
